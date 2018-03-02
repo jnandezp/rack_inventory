@@ -53,7 +53,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 													</div>
 													<div class="row">
 														<span class="rack-item-value">
-															<?= $detalle->value; 	?>
+															<?= $detalle->value; ?>
 														</span>
 													</div>
 												</td>
@@ -118,8 +118,11 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 			.done(function( msg ) {
 
 				if(msg.code == 200){
+
+					console.log(itemId);
 					// Si se guardo correctamente actualizamos el valor en la vista
-					$('[data-id-item="'+itemId+'"]').children('.rack-item-value').text(newValue)
+					$('[data-id-item="'+itemId+'"]').find('.rack-item-value').text(newValue);
+					// $('[data-id-item="'+itemId+'"]').children('.rack-item-value').text();
 					$('#modalChengueValue').foundation('close');
 				}
 				
