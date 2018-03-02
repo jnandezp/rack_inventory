@@ -1,0 +1,21 @@
+div.main-container{
+	padding: 1rem;
+}
+
+a.button.delete-rack, button.button.delete-rack{
+	margin: 0;
+}
+
+img.box-pallet{
+	width: 150px;
+	height: 150px;
+}
+
+td.width-cell{
+	min-width: 180px;
+	height: 180px;
+}
+
+.rack-item{
+	cursor: pointer;
+}
